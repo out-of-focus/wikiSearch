@@ -1,0 +1,128 @@
+body {
+  background-color: #CFD8DC;
+  padding: 2% 0 0 0;
+  margin: 0;
+  font-family: Muli;
+  font-size: 1.5em;
+}
+
+#plaque {
+  color: #607D8B;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 0px;
+  heigth: 100%;
+  width: 60%;
+  min-width: 200px;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 20vh;
+  transition: all 1s;
+  /*overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:left;*/
+}
+
+#random:hover {
+  /*color: #9d0416;*/
+  color: rgb(250, 166, 26);
+  cursor: pointer;
+}
+
+#searchicon {
+  position: absolute;
+  transition: all 1s ease;
+  z-index: 1;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.begin {
+  width: 50px;
+  right: 42%;
+  top: 0px;
+}
+.searching {
+  right: 5px;
+  top: 5px;
+  width: 23px;
+}
+
+.subtext {
+  font-size: small
+}
+
+#theQuery {
+  width: 1px;
+  font-size: 1em;
+  color: #455A64;
+  padding: 5px 10px;
+  margin: 0px;
+  margin-top: 10px;
+  background-color: rgba(200, 200, 200, 0);
+  /*border-radius: 5px;
+    border-style: solid;
+  border-color: rgb(250, 166, 26);
+  border-width: 3px;*/
+  font-family: Muli;
+  border-image-source: none;
+  border: none;
+  /*display: none;*/
+  transition: width 1.3s;
+}
+
+form {
+  margin: 0px;
+  padding: 0px;
+}
+
+#row {
+  position: relative;
+  margin: 5px 0px 40px 0px;
+  padding: 0px;
+  }
+
+#theQuery.active {
+  background-color: rgba(255, 255, 245, 0.2);
+  width: 90%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-style: solid;
+  border-color: rgb(250, 166, 26);
+  border-width: 3px;
+  border-radius: 2px;
+}
+#theQuery:focus {
+  background-color: rgba(255, 255, 245, 0.5);
+  -webkit-appearance: none;
+  outline: none;
+}
+#results{margin-top: 70px;}
+.results {
+  color: #607D8B;
+  border-color: rgba(255, 255, 255, 0.3);
+  border-width: 2px;
+  border-style: solid;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  text-align: left;
+  font-size: small;
+  padding: 5px 10px 5px 30px;
+  width: 80%;
+  min-heigth: 20px;
+  margin: auto;
+  /* margin-top: 20vh;*/
+  background-image: url("odblask2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+.results:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 3px rgba(250, 166, 26, 0.6), 0px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.new {
+  border: 1px red solid;
+}
